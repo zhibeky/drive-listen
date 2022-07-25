@@ -1,0 +1,113 @@
+<html>
+	<head>
+		<!-- Title -->
+		<title>Drive & Listen Qazaqstan</title>
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="assets/icon.png">
+
+		<!-- Viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Description metadata-->
+		<meta name="description" content="Drive around Kazakhstan cities while listening to local radios and your favourite songs." />
+
+		<!-- Styles -->
+		<link href="./css/stylesheet.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+		<!-- Scripts -->
+		<script src="https://www.youtube.com/iframe_api"></script>
+        <script src="https://kit.fontawesome.com/f6253cdeea.js" crossorigin="anonymous"></script>
+		<script src="./js/locations.js"></script>   
+		<script src="./js/radio.js"></script>
+		<script src="./js/player.js"></script>
+		<script src="./js/state.js"></script>
+	</head>
+	<body>
+		<div class="app">
+			<!-- Loading element -->
+			<div class="loading">
+				<h1>"LOADING"</h1>
+			</div>
+
+			<!-- Location Element-->
+			<div class="location"></div>
+
+			<!-- Youtube player element -->
+			<div class="player" id="player"></div>
+
+			<!-- Show/Hide button -->
+			<div class="show-hide" onclick="toggleMenu()"><i class="fa-solid fa-eye-slash"></i></div>
+
+			<!-- Menu -->
+			<div class="menu">
+				<!-- Cities -->
+				<div class="cities">
+					<div class="cities-header">
+						<p>Cities</p>
+					</div>
+					<div class="cities-list">
+						<ul></ul>
+					</div>
+				</div>
+
+				<!-- Random City -->
+				<div class="random-city" onclick="changeLocation(chooseRandomLocation().id)">
+					<p>Take me to a good place.</p>
+				</div>
+
+				<!-- Radio -->
+				<div class="radio">
+					<!-- Radio Header -->
+					<div class="radio-header"></div>
+					
+					<!-- Radio Controls -->
+					<div class="radio-controls">
+						<div class="radio-play-pause" onclick="togglePlayPause()"><i class="fas fa-pause"></i></div>
+						<div class="radio-volume"><input type="range" min="0" max="100" step="1" value="50" onchange="setVolume(this.value)"></div>
+					</div>
+
+					<!-- Radio Source -->
+					<iframe src="assets/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+					<audio autoplay onplay="removeRadioLoading()"></audio>
+				</div>
+
+				<!-- Configuration -->
+				<div class="configuration">
+					<!-- Noise -->
+					<div class="configuration-group">
+						<p>Noise</p>
+						<button onclick="toggleNoise(this)">OFF</button>
+					</div>
+
+					<!-- Speed -->
+					<div class="configuration-group">
+						<p>Speed</p>
+
+						<div class="buttons">
+							<button data-speed="1" class="active" onclick="setSpeed(1)">1X</button>
+							<button data-speed="1.5" onclick="setSpeed(1.5)">1.5X</button>
+							<button data-speed="2" onclick="setSpeed(2)">2X</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="information">
+					<div class="social">
+						<a target="blank" href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+						<a target="blank" href="https://t.me/simply_jpeg"><i class="fa-brands fa-telegram"></i></a>
+						<a target="blank" href="mailto:zhibek.zhagypar@nu.edu.kz"><i class="fa-solid fa-envelope"></i></a>
+						<a target="blank" href="https://www.linkedin.com/in/zhibek-zhagypar-7671921a2/"><i class="fa-brands fa-linkedin"></i></a>
+					</div>
+					
+					<div class="video-source">
+						<a target="blank">Video Source</a>
+					</div>
+				</div>
+			</div>
+		</div>
+        <script src="./js/index.js"></script>
+	</body>
+</html>
