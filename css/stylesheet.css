@@ -62,6 +62,11 @@ CITIES LIST
   border-radius: 2px;
   margin-top: 3%;
 }
+.radio {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
 .cities {
   height: 25%;
@@ -81,7 +86,15 @@ CITIES LIST
 }
 
 .radio-header {
-  height: 40%;
+  height: 30%;
+  border: none;
+}
+
+.spotify {
+  height: 70%;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .cities-list {
@@ -120,16 +133,16 @@ CITIES LIST
 RADIO
 */
 .radio {
-  height: 10%;
+  height: 13%;
 }
 
-.radio-controls {
+/* .radio-controls {
   width: 100%;
   height: 60%;
   display: flex;
   align-items: center;
   padding: 10px;
-}
+} */
 
 .radio-play-pause,
 .radio-volume {
@@ -195,7 +208,7 @@ CONFIGURATION
   cursor: pointer;
   background: none;
   color: #eee;
-  border: 1px solid #eee;
+  /* border: 1px solid #eee; */
   font-size: 16px;
   outline: none;
 }
@@ -255,6 +268,15 @@ MENU FOOTER
 .footer a {
   color: dodgerblue;
   text-decoration: none;
+}
+.buy-me-coffee {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid black; */
+  align-self: center;
+  margin: 0;
+  padding: 0;
 }
 
 /*
