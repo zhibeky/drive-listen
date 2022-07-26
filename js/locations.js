@@ -4,7 +4,7 @@ LOCATIONS = [
     name: "Almaty",
     videoId: "p5ytb4W5ywU",
     radio: {
-      url: "https://qazradio.fm/kz/live/",
+      url:  "https://qazradio.fm/kz/live/",
       name: "QAZ",
     },
     startTime: 10,
@@ -24,6 +24,41 @@ LOCATIONS = [
     name: "Shymkent",
     // https://www.youtube.com/watch?v=DVa7ek45HcI
     videoId: "DVa7ek45HcI",
+    radio: {
+      url: "https://qazradio.fm/kz/live/",
+      name: "QAZ",
+    },
+    startTime: 10,
+  },
+  // https://www.youtube.com/watch?v=bORUZdBuP4U
+  {
+    id: 4,
+    name: "Uralsk",
+    videoId: "bORUZdBuP4U",
+    radio: {
+      url: "https://qazradio.fm/kz/live/",
+      name: "QAZ",
+    },
+    startTime: 10,
+  },
+  // https://www.youtube.com/watch?v=IJUdI7QrUaA
+  // Atyrau
+  {
+    id: 4,
+    name: "Atyrau",
+    videoId: "IJUdI7QrUaA",
+    radio: {
+      url: "https://qazradio.fm/kz/live/",
+      name: "QAZ",
+    },
+    startTime: 10,
+  },
+
+  // https://www.youtube.com/watch?v=-7Poq8OS8X4
+  {
+    id: 6,
+    name: "Kyzylorda",
+    videoId: "-7Poq8OS8X4",
     radio: {
       url: "https://qazradio.fm/kz/live/",
       name: "QAZ",
