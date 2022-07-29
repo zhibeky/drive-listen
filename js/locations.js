@@ -45,7 +45,7 @@ LOCATIONS = [
   // https://www.youtube.com/watch?v=IJUdI7QrUaA
   // Atyrau
   {
-    id: 4,
+    id: 5,
     name: "Atyrau",
     videoId: "IJUdI7QrUaA",
     radio: {
