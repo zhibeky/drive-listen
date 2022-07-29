@@ -17,11 +17,24 @@ function playVideo(location) {
   }
 }
 
+// button effect
+let buttonEffect = document.querySelector("button"),
+  sound = null;
+sound = new Audio("./assets/window.mp3");
+
 function mute() {
+  buttonEffect.addEventListener("click", () => {
+    sound.currentTime = 0;
+    sound.play();
+  });
   state.currentPlayer.mute();
 }
 
 function unmute() {
+  buttonEffect.addEventListener("click", () => {
+    sound.currentTime = 0;
+    sound.play();
+  });
   state.currentPlayer.unMute();
 }
 
