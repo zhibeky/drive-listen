@@ -4,7 +4,8 @@ LOCATIONS = [
     name: "Almaty",
     videoId: "p5ytb4W5ywU",
     radio: {
-      url:  "https://qazradio.fm/kz/live/",
+      url: "",
+      // https://www.youtube.com/watch?v=72k0Cy3q8Q8
       name: "QAZ",
     },
     startTime: 10,
@@ -14,7 +15,7 @@ LOCATIONS = [
     name: "Nur-Sultan",
     videoId: "4mJyd1Eju6s",
     radio: {
-      url: "https://qazradio.fm/kz/live/",
+      url: "",
       name: "QAZ",
     },
     startTime: 0,
