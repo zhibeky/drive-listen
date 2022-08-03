@@ -39,10 +39,17 @@ function toggleActiveButton(speed) {
   currentButton.classList.add("active");
 }
 
-function toggleNoise(element) {
-  const isOn = element.innerHTML == "ON";
+// let buttonEffect = document.querySelector("button"),
+//   sound = null;
+// sound = new Audio("./assets/car_window.mp3");
 
-  element.innerHTML = isOn ? "OFF" : "ON";
+function toggleNoise(element) {
+  // buttonEffect.addEventListener("click", () => {
+  //   sound.play();
+  // });
+  const isOn = element.innerHTML == "OPEN";
+
+  element.innerHTML = isOn ? "CLOSED" : "OPEN";
   element.style.background = isOn ? "none" : "#eee";
   element.style.color = isOn ? "#eee" : "black";
 
@@ -67,4 +74,3 @@ function changeVideoSource(videoId) {
 }
 
 updateCitiesList();
-setVolume(50);
