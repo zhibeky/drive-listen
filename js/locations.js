@@ -4,18 +4,18 @@ LOCATIONS = [
     name: "Almaty",
     videoId: "p5ytb4W5ywU",
     radio: {
-      url: "",
-      // https://www.youtube.com/watch?v=72k0Cy3q8Q8
+      url: "https://qazradio.fm/kz/live/",
       name: "QAZ",
     },
-    startTime: 10,
+    startTime: 0,
   },
   {
     id: 2,
     name: "Nur-Sultan",
-    videoId: "4mJyd1Eju6s",
+    // https://www.youtube.com/watch?v=Ay96SofAAjQ
+    videoId: "Ay96SofAAjQ",
     radio: {
-      url: "",
+      url: "https://qazradio.fm/kz/live/",
       name: "QAZ",
     },
     startTime: 0,
@@ -23,7 +23,6 @@ LOCATIONS = [
   {
     id: 3,
     name: "Shymkent",
-    // https://www.youtube.com/watch?v=DVa7ek45HcI
     videoId: "DVa7ek45HcI",
     radio: {
       url: "https://qazradio.fm/kz/live/",
@@ -31,19 +30,6 @@ LOCATIONS = [
     },
     startTime: 10,
   },
-  // https://www.youtube.com/watch?v=bORUZdBuP4U
-  {
-    id: 4,
-    name: "Uralsk",
-    videoId: "bORUZdBuP4U",
-    radio: {
-      url: "https://qazradio.fm/kz/live/",
-      name: "QAZ",
-    },
-    startTime: 10,
-  },
-  // https://www.youtube.com/watch?v=IJUdI7QrUaA
-  // Atyrau
   {
     id: 5,
     name: "Atyrau",
@@ -54,8 +40,6 @@ LOCATIONS = [
     },
     startTime: 10,
   },
-
-  // https://www.youtube.com/watch?v=-7Poq8OS8X4
   {
     id: 6,
     name: "Kyzylorda",
@@ -65,6 +49,16 @@ LOCATIONS = [
       name: "QAZ",
     },
     startTime: 10,
+  },
+  {
+    id: 4,
+    name: "Oral",
+    videoId: "bORUZdBuP4U",
+    radio: {
+      url: "https://qazradio.fm/kz/live/",
+      name: "QAZ",
+    },
+    startTime: 15,
   },
 ];
 
@@ -89,7 +83,6 @@ function changeLocation(locationId) {
 
   changeLocationText(location.name);
   changeVideoSource(location.videoId);
-  changeRadio(location.radio);
   toggleActiveClassOnLocation(location.id);
   playVideo(location);
 }
