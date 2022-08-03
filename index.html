@@ -3,28 +3,22 @@
 		<!-- Title -->
 		<title>Drive & Listen Qazaqstan</title>
 
-		<!-- Favicon -->
-		<link rel="shortcut icon" href="assets/icon.png">
 
 		<!-- Viewport -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<!-- Description metadata-->
-		<meta name="description" content="Drive around Kazakhstan cities while listening to local radios and your favourite songs." />
+		<meta name="description" content="Drive around Kazakhstan cities while listening to Kazakh songs." />
 
 		<!-- Styles -->
 		<link href="./css/stylesheet.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 
-		<!-- Buy me a coffee -->
-		<!-- <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="jpeg" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting! Now you can buy me a coffee." data-color="#BD5FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script> -->
-
 		<!-- Scripts -->
 		<script src="https://www.youtube.com/iframe_api"></script>
         <script src="https://kit.fontawesome.com/f6253cdeea.js" crossorigin="anonymous"></script>
 		<script src="./js/locations.js"></script>   
-		<script src="./js/radio.js"></script>
 		<script src="./js/player.js"></script>
 		<script src="./js/state.js"></script>
 	</head>
@@ -65,20 +59,9 @@
 				<div class="radio">
 					<!-- Radio Header -->
 					<div class="radio-header">Listen to Qazaq music</div>
-					
-					<!-- Radio Controls -->
-					<!-- <div class="radio-controls">
-						<div class="radio-play-pause" onclick="togglePlayPause()"><i class="fas fa-pause"></i></div>
-						<div class="radio-volume"><input type="range" min="0" max="100" step="1" value="50" onchange="setVolume(this.value)"></div>
-					</div> -->
-
-					<!-- Radio Source -->
-					<!-- <iframe src="assets/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
-					<audio autoplay onplay="removeRadioLoading()"></audio> -->
 
 					<!-- Spotify play -->
 					<div class="spotify">
-					<!-- <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3xoSOl6mBJ8LIqi15vHNUs?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> -->
 					<iframe style="border-radius:0px" src="https://open.spotify.com/embed/playlist/0NhfFgtyBIpU8PLdf445gy?utm_source=generator&theme=0" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 					</div>
 				</div>
@@ -88,12 +71,12 @@
 					<!-- Noise -->
 					<div class="configuration-group click">
 						<p>Open/close the window</p>
-						<button onclick="toggleNoise(this)">OFF</button>
+						<button onclick="toggleNoise(this)">CLOSED</button>
 					</div>
 
 					<!-- Speed -->
 					<div class="configuration-group">
-						<p>Speed</p>
+						<p>	Speed</p>
 
 						<div class="buttons">
 							<button data-speed="1" class="active" onclick="setSpeed(1)">60km/h</button>
@@ -112,12 +95,10 @@
 					</div>
 					
 					<div class="video-source">
-						<a target="blank">Video Source</a>
+						<a target="blank"></a>
 					</div>
 				</div>
 				<div class="buy-me-coffee">
-					<!-- <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="jpeg" data-color="#BD5FFF" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script> -->
-					<!-- <a href="https://www.buymeacoffee.com/jpeg" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a> -->
 					<a href="https://www.buymeacoffee.com/jpeg" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 				</div>
 			</div>
